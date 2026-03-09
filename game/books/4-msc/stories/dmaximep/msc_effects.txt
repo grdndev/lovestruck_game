@@ -1,0 +1,78 @@
+# add to effects.rpy
+# right now it just covers the screen, there has to be a way to crop it to a rectangle
+# but I haven't successfully done it
+image sparkle_spike_sm:
+    "images/msc/effects/soft_spike_sparkle.png"
+    zoom 0.10
+image sparkle_spike_med:
+    "images/msc/effects/soft_spike_sparkle.png"
+    zoom 0.25
+image sparkle_spike_effect = Fixed(
+    SnowBlossom("sparkle_spike_sm", count=10, border=64, xspeed=(-5, 5), yspeed= (-50, -30), fast=True, start=5),
+    SnowBlossom("sparkle_spike_med", count=5, border=64, xspeed=(-5, 5), yspeed= (-50, -30), fast=True, start=5),
+    SnowBlossom("sparkle_spike_med", count=5, border=64, xspeed=(-5, 5), yspeed= (-50, -30), fast=True, start=7))
+---
+# add to transforms.rpy
+transform out_right_slow:
+    parallel:
+        easein 1 xoffset 200
+    parallel:
+        linear 0.4 alpha 0.0
+
+transform swoop:
+    parallel:
+        ease 0.6 xoffset 100
+    parallel:
+        block:
+            linear 0.3 yoffset 35
+            linear 0.3 yoffset 0
+    pause 0.5
+    parallel:
+        ease 0.6 xoffset -100
+    parallel:
+        block:
+            linear 0.3 yoffset 35
+            linear 0.3 yoffset 0    
+    pause 0.5
+    repeat
+---
+# add to transitions.rpy
+define eye_open_slow = ImageDissolve("grad_eye", 0.6, ramplen=64)
+---
+# add to trinasprite.rpy
+# no clue why this is necessary, for whatever reason in preview ep 6 trina_cu just pushes trina off the left of the screen
+transform trina_cu2:
+    xanchor -130
+    yanchor 655
+---
+# these are the surfboard transforms in case they're needed
+# these need to go at the top layer of the character sprite layered image
+# trinasprite.rpy
+    group surfboard auto:
+        attribute surfboard:
+            "trina_surfboard"
+            zoom 1.25
+            xpos -366
+            ypos 385
+image trina_surfboard:
+    "images/msc/effects/surfboard_acc_front.png"
+
+# maximesprite.rpy
+    group surfboard auto:
+        attribute surfboard:
+            "maxime_surfboard"
+            zoom 1.25
+            xpos -163
+            ypos 248
+image maxime_surfboard:
+    "images/msc/effects/surfboard_maxime_acc_back.png"
+
+# mscmcsprite.rpy
+    group surfboard auto:
+        attribute surfboard:
+            "mc_surfboard"
+            zoom 1.25
+            xpos -225
+            ypos 365
+image mc_surfboard:
+    "images/msc/effects/surfboard_acc_back.png"

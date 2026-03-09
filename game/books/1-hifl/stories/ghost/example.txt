@@ -1,0 +1,5 @@
+init:
+    $addstory(story_id = "storyid", story_name = "Custom Story", story_book = "hifl", story_seasonlength = 12, seasons = 1, episodes = 1, nameablecharacters = 2)
+
+define mycharacter1 = Character("books.names[\"storyidfn1\"]",color="#FFFFFF", who_underline=True, what_outlines=[ (tsize, "#000") ],who_outlines=[(tsize, "#000")], ctc = "ctc_", dynamic = True)
+define mycharacter2 = Character("books.names[\"storyidfn2\"]",color="#FFFFFF", who_underline=True, what_outlines=[ (tsize, "#000") ],who_outlines=[(tsize, "#000")], ctc = "ctc_", dynamic = True)
