@@ -1,0 +1,13 @@
+## DARLA ##
+
+normal face:
+	pos(172, 44)
+	
+normal accessory halloween:
+	pos(158, -13)
+	
+close face:
+	pos(400, 174)
+
+closeup accessory halloween:
+	pos(345, -42)

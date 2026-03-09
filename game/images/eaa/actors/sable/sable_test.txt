@@ -1,0 +1,67 @@
+label storyid_season1_episode2:
+    #Keep this right here.
+    $tbc = False
+
+    ##Change these to suit the story
+    scene hifl_prologue at bg
+    play music hifleveryday
+
+    #Make sure this pause happens BEFORE the three $ lines below.
+    pause
+
+    #Leave these guys right here! Or things will get weird.
+    $ hidetextbox = True
+    $ renpy.block_rollback()
+    $ hideborders = False
+
+    #And now you're free to do pretty much wcasualever, so long as you leave resets() and tobecontinued() at the bottom.
+label select1:
+    $menuhideborder = True
+    menu se2c1:
+        "Full Body":
+            jump sprite1
+
+        "Closeup":
+            jump sprite2
+
+label sprite1:
+    $menuhideborder = False
+    scene black at bg with dissolve
+    show sabine casual smile at left1plus
+    show sable casual smile at right1plus
+    va "Test 1."
+    show sable casual angry
+    va "Test 2"
+    show sable casual basic centre
+    hide sabine
+    va "Test 3"
+    show sable casual sleep
+    va "Test 4"
+    show sable casual surprised
+    va "Test 5"
+    hide sable
+    jump select1
+
+label sprite2:
+    $menuhideborder = False
+    scene black at bg with dissolve
+    show sable casual_cu angry_cu at sable_cu
+    va "Test 1."
+    show sable casual_cu sleep_cu
+    va "Test 2"
+    show sable casual_cu smile_cu
+    va "Test 3"
+    show sable casual_cu basic_cu
+    va "Test 4"
+    show sable casual_cu surprised_cu
+    va "Test 5"
+    hide sable
+    jump select1
+
+
+    $tobecontinued() #Do not more or remove this please. It's okay to do stuff like hide characters
+#                     underneath it, so long as it's above tcasual pause down there.
+
+    pause
+    $ resets() #Also do not move or remove this, it needs to be the very last thing tcasual happens.
+

@@ -1,0 +1,7 @@
+## FERGUS ##
+
+normal face:
+	pos(136, 54)
+	
+closeup face:
+	pos(468, 210)

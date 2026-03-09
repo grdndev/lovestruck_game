@@ -1,0 +1,7 @@
+## LUCAS ##
+
+normal face:
+	pos(106, 54)
+
+closeup face:
+	pos(317, 214)

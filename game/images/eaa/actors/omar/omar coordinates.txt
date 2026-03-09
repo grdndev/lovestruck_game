@@ -1,0 +1,13 @@
+# OMAR #
+
+normal face:
+	pos(56, 57)
+	
+normal accessory glasses:
+	pos(61, 62)
+	
+closeup face:
+	pos(224, 223)
+	
+closeup accessory glasses:
+	pos(224, 242)

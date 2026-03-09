@@ -1,0 +1,7 @@
+## SLY ##
+
+normal face:
+	pos(127, 49)
+	
+closeup face:
+	pos(388, 209)

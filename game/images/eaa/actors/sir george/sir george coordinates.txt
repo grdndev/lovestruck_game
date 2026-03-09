@@ -1,0 +1,7 @@
+## (SIR) GEORGE ##
+
+normal face:
+	pos(104, 49)
+
+closeup face:
+	pos(375, 194)

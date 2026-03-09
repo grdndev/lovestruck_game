@@ -1,0 +1,7 @@
+# EDWARD #
+
+normal face:
+	pos(77, 51)
+	
+closeup face:
+	pos(260, 198)

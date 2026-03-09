@@ -1,0 +1,2 @@
+Mask: X:176 Y:30
+Headband: X: 363 Y:36

@@ -1,0 +1,15 @@
+## JACKIE ##
+
+normal face:
+	pos(76, 65)
+
+normal accessory glasses:
+	pos(72, 70)
+	
+##
+
+closeup face:
+	pos(257, 257)
+
+closeup accessory glasses:
+	pos(241, 275)

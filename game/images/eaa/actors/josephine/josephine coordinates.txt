@@ -1,0 +1,7 @@
+## JOSEPHINE ##
+
+normal face:
+	pos(182, 41)
+
+closeup face:
+	pos(308, 162)

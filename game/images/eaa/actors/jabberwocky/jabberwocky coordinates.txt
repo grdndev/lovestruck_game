@@ -1,0 +1,7 @@
+## JABBERWOCKY ##
+
+normal face:
+	pos(-30, -192)
+	
+closeup face:
+	pos(-322, -438)

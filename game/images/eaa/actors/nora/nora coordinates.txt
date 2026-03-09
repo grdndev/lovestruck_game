@@ -1,0 +1,23 @@
+# NORA #
+
+normal face:
+	pos(93, 48)
+	
+normal accessory:
+	hat:
+		pos(29, -59)
+		
+	broom:
+		pos(-2, 13)
+		
+###
+
+closeup face:
+	pos(226, 193)
+	
+closeup accessory:
+	hat:
+		pos(-144, 57)
+		
+	broom:
+		pos(-21, -224)

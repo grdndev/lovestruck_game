@@ -1,0 +1,7 @@
+## BOSCO ##
+
+Normal face:
+	pos(86, 50)
+
+Closeup face:
+	pos(289, 198)

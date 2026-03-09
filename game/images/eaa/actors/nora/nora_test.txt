@@ -1,0 +1,81 @@
+label storyid_season1_episode2:
+    #Keep this right here.
+    $tbc = False
+
+    ##Change these to suit the story
+    scene hifl_prologue at bg
+    play music hifleveryday
+
+    #Make sure this pause happens BEFORE the three $ lines below.
+    pause
+
+    #Leave these guys right here! Or things will get weird.
+    $ hidetextbox = True
+    $ renpy.block_rollback()
+    $ hideborders = False
+
+    #And now you're free to do pretty much whatever, so long as you leave resets() and tobecontinued() at the bottom.
+label select1:
+    $menuhideborder = True
+    menu se2c1:
+        "Full Body":
+            jump sprite1
+
+        "Closeup":
+            jump sprite2
+
+label sprite1:
+    $menuhideborder = False
+    scene black at bg with dissolve
+    show nora witch hat broom grin at centre
+    va "Test 1."
+    show nora polo angry
+    va "Test 2"
+    show nora school embarrassed
+    va "Test 3"
+    show nora tie smile -hat
+    va "Test 4"
+    show nora under sad
+    va "Test 5"
+    show nora casual smirk -broom
+    va "Test 6"
+    show nora tie surprised
+    va "Test 7"
+    show nora under sleep
+    va "Test 8"
+    show nora casual basic
+    va "Test 9"
+    hide nora
+    jump select1
+
+label sprite2:
+    $menuhideborder = False
+    scene black at bg with dissolve
+    show nora witch_cu hat_cu broom_cu grin_cu at nora_cu
+    va "Test 1."
+    show nora polo_cu angry_cu
+    va "Test 2"
+    show nora school_cu embarrassed_cu
+    va "Test 3"
+    show nora tie_cu smile_cu -hat_cu
+    va "Test 4"
+    show nora under_cu sad_cu
+    va "Test 5"
+    show nora casual_cu smirk_cu -broom_cu
+    va "Test 6"
+    show nora tie_cu surprised_cu
+    va "Test 7"
+    show nora under_cu sleep_cu
+    va "Test 8"
+    show nora casual_cu basic_cu
+    va "Test 9"
+    hide nora
+    jump select1
+
+
+    $tobecontinued() #Do not more or remove this please. It's okay to do stuff like hide characters
+#                     underneath it, so long as it's above that pause down there.
+
+    pause
+    $ resets() #Also do not move or remove this, it needs to be the very last thing that happens.
+

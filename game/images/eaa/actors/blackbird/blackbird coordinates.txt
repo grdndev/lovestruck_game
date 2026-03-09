@@ -1,0 +1,7 @@
+# BLACKBIRD PRINCE #
+
+normal face:
+	pos(232, 33)
+
+closeup face:
+	pos(291, 125)

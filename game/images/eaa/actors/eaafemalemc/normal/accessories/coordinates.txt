@@ -1,0 +1,3 @@
+Mask: X:56 Y:9
+Headband: X: 104 Y:11
+Ring: X:75 Y:26

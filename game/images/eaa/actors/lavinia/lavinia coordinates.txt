@@ -1,0 +1,7 @@
+## LAVINIA ##
+
+normal face:
+	pos(87, 64)
+	
+closeup face:
+	pos(341, 248)

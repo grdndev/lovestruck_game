@@ -1,0 +1,7 @@
+## JAMES ##
+
+normal face:
+	pos(92,62)
+	
+closeup face:
+	pos(343, 234)

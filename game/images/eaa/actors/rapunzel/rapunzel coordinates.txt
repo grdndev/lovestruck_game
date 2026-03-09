@@ -1,0 +1,7 @@
+## RAPUNZEL ##
+
+normal face:
+	pos(158, 61)
+	
+closeup face:
+	pos(293, 236)

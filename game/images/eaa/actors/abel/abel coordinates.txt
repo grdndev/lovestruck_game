@@ -1,0 +1,7 @@
+## ABEL ##
+
+normal face:
+	pos(102, 53)
+
+closeup face:
+	pos(263, 213)

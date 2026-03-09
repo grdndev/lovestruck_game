@@ -1,0 +1,7 @@
+## BLOSSOM ##
+
+normal face:
+	pos(82, 105)
+
+closeup face:
+	pos(292, 289)

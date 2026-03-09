@@ -1,0 +1,13 @@
+# GALAHAD #
+
+normal face:
+	pos(118, 40)
+	
+normal accessory helmet:
+	pos(100, -8)
+	
+closeup face:
+	pos(384, 156)
+
+closeup accessory helmet:
+	pos(314, -40)

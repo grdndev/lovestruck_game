@@ -1,0 +1,18 @@
+# EZRA #
+
+normal face:
+	pos(127, 57)
+	
+normal accessory:
+	glove:
+		pos(78, 347)
+		
+	glove_claw:
+		pos(174, 98)
+		
+closeup face:
+	pos(394, 222)
+	
+closeup accessory:
+	glove_claw:
+		pos(575, 385)
